@@ -69,7 +69,7 @@ export default function Login() {
       autenticaStore.login({ email: email, token: resposta });
       resposta && navigate("/dashboard");
     } catch (erro) {
-      erro && alert("Não foi possivel fazer login");
+      erro && alert("Não foi possível fazer login");
     }
   };
 

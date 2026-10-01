@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import CampoDigitacao from "../../components/CampoDigitacao";
+import CampoDigitacao from "../../components/CampoDigitacao";
 import { useState } from "react";
 import Botao from "../../components/Botao";
 import { Link } from "react-router-dom";
@@ -53,7 +53,7 @@ export default function Login() {
       <Imagem src={logo} alt="Logo da Voll" />
       <Titulo>Faça login em sua conta</Titulo>
       <Formulario>
-        {/* <CampoDigitacao
+        <CampoDigitacao
           tipo="email"
           label="Email"
           valor={email}
@@ -66,7 +66,7 @@ export default function Login() {
           valor={senha}
           placeholder="Insira sua senha"
           onChange={setSenha}
-        /> */}
+        />
         <BotaoCustomizado type="submit">Entrar</BotaoCustomizado>
       </Formulario>
       <Paragrafo>Esqueceu sua senha?</Paragrafo>
